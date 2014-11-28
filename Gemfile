@@ -1,6 +1,12 @@
 source 'https://rubygems.org'
 ruby '2.1.5'
 
+# Use jquery turbolinks
+gem 'jquery-turbolinks'
+
+# Use rails-i18n
+gem 'rails-i18n', '~> 4.0.0'
+
 # Use haml template
 gem 'haml'
 
