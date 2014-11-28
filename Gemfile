@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.1.5'
 
+# Use haml template
+gem 'haml'
+
 # Rspec testing framework
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'

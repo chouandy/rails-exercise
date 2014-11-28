@@ -18,3 +18,7 @@ Use gems
 ## Rspec testing framework
 
 Setting guide：[GOTO](http://chouandy.logdown.com/posts/241718-configure-rspec-testing-environment)
+
+## Haml template
+
+Official site：[GOTO](http://haml.info/)
