@@ -1,0 +1,3 @@
+$ ->
+  # timeago
+  $('abbr.timeago').timeago();
