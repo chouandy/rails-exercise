@@ -1,6 +1,13 @@
 source 'https://rubygems.org'
 ruby '2.1.5'
 
+# Use Bootstrap && Compass
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+gem 'sprockets-rails', require: 'sprockets/railtie'
+gem 'bootstrap_form', github: 'bootstrap-ruby/rails-bootstrap-forms'
+gem 'compass-rails'
+
 # Use jquery turbolinks
 gem 'jquery-turbolinks'
 
