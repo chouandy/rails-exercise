@@ -1,6 +1,15 @@
 source 'https://rubygems.org'
 ruby '2.1.5'
 
+# Rspec testing framework
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'rack_session_access'
+end
+
 # Display full error context
 group :development do
   gem 'better_errors'
