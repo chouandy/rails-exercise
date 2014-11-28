@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/FortAwesome/font-awesome-sass.git
+  revision: f2cf6a06bff4e03a112c1c0d4a7c7200329be9a9
+  specs:
+    font-awesome-sass (4.2.2)
+      sass (~> 3.2)
+
+GIT
   remote: git://github.com/bootstrap-ruby/rails-bootstrap-forms.git
   revision: 34419d6a45dd63e02fd09e698b623e2e07b7580a
   specs:
@@ -189,6 +196,7 @@ DEPENDENCIES
   compass-rails
   database_cleaner
   factory_girl_rails
+  font-awesome-sass!
   haml
   jbuilder (~> 2.0)
   jquery-rails

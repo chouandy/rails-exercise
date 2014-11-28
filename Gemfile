@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.1.5'
 
+# Use Font Awesome
+gem 'font-awesome-sass', github: 'FortAwesome/font-awesome-sass'
+
 # Use Bootstrap && Compass
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
