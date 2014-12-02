@@ -1,0 +1,9 @@
+.container
+  .page-header
+    %h3
+      = t :resend_confirmation_email
+  = bootstrap_form_for resource, as: resource_name, url: confirmation_path(resource_name), layout: :horizontal, label_col: 'col-sm-2', control_col: 'col-sm-4' do |f|
+    = f.email_field :email, placeholder: 'E-mail', prepend: fa_icon('envelope-o fw'), autofocus: true
+    = f.form_group do
+      = f.primary t(:resend)
+      = link_button t('form.cancel'), url: new_registration_path(resource_name)

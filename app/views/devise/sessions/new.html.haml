@@ -1,0 +1,16 @@
+.container
+  .page-header
+    %h3
+      = t :sign_in
+  = bootstrap_form_for resource, as: resource_name, url: session_path(resource_name), layout: :horizontal, label_col: 'col-sm-2', control_col: 'col-sm-4' do |f|
+    - if alert.nil?
+      = f.email_field :email, placeholder: 'E-mail', prepend: fa_icon('envelope-o fw'), autofocus: true
+      = f.password_field :password, placeholder: 'Password', prepend: fa_icon('key fw'), autocomplete: 'off'
+    - else
+      = f.email_field :email, placeholder: 'E-mail', prepend: fa_icon('user fw'), autofocus: true, wrapper_class: 'has-error', help: alert
+      = f.password_field :password, placeholder: 'Password', prepend: fa_icon('key fw'), autocomplete: 'off', wrapper_class: 'has-error', help: alert
+    = f.form_group :remember_me do
+      = f.check_box :remember_me
+    = f.form_group do
+      = f.primary t(:sign_in)
+      = link_button t(:forgot_password), url: new_password_path(resource_name), color: 'warning'

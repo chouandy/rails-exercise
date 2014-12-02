@@ -1,0 +1,11 @@
+zh-TW:
+  # devise dependence
+  sign_up: '註冊'
+  sign_in: '登入'
+  sign_out: '登出'
+  edit: '編輯'
+  resend_confirmation_email: '重發認證信'
+  resend: '重發'
+  forgot_password: '忘記密碼？'
+  reset_password: '重設密碼'
+  reset: '重設'

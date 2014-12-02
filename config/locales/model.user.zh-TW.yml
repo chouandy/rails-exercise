@@ -1,0 +1,18 @@
+zh-TW:
+  activerecord:
+    models:
+      user: '使用者'
+    attributes:
+      user:
+        email: '信箱'
+        password: '密碼'
+        password_confirmation: '密碼確認'
+        remember_me: '保持登入狀態'
+        remember_created_at: '保持登入狀態開始時間'
+        sign_in_count: '登入次數'
+        current_sign_in_at: '登入時間'
+        last_sign_in_at: '上次登入時間'
+        current_sign_in_ip: '登入IP'
+        last_sign_in_ip: '上次登入IP'
+        created_at: '建立時間'
+        updated_at: '更新時間'

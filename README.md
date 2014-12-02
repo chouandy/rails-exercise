@@ -36,3 +36,7 @@ Official site：[GOTO](http://fortawesome.github.io/Font-Awesome/)
 ## Use jQuery plugin - Timeago
 
 Setting guide：[GOTO](http://chouandy.logdown.com/posts/244907-use-jquery-plugin-timeago)
+
+## Use Devise control User
+
+Setting guide：[GOTO](http://chouandy.logdown.com/posts/245117-devise-part-1-basic-installation)

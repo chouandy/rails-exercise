@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
+  devise_for :user
+
   get 'examples(/:action)', controller: 'examples', as: :examples
+  root 'welcome#index'
 end

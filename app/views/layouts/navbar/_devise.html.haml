@@ -1,0 +1,25 @@
+%ul.nav.navbar-nav.navbar-right
+  %li.dropdown
+    - unless user_signed_in?
+      %a.dropdown-toggle{ href: '#', 'data-toggle' => 'dropdown' }
+        = fa_icon 'user fw'
+        Devise
+        %b.caret
+      %ul.dropdown-menu
+        %li
+          %a{ href: new_registration_path(:user) }
+            = fa_icon 'plus fw'
+            = t :sign_up
+          %a{ href: new_session_path(:user) }
+            = fa_icon 'sign-in fw'
+            = t :sign_in
+    - else
+      %a.dropdown-toggle{ href: '#', 'data-toggle' => 'dropdown' }
+        = fa_icon 'user fw'
+        = current_user.name
+        %b.caret
+      %ul.dropdown-menu
+        %li
+          %a{ href: destroy_session_path(:user), 'data-method' => 'delete' }
+            = fa_icon 'sign-out fw'
+            = t :sign_out

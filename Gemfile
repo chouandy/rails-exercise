@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 ruby '2.1.5'
 
+# Use Devise control User
+gem 'devise'
+gem 'devise-i18n'
+
 # For heroku
 group :production do
   gem 'pg'

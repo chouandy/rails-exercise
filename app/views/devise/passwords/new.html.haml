@@ -1,0 +1,10 @@
+.container
+  .page-header
+    %h3
+      = t :forgot_password
+  = bootstrap_form_for resource, as: resource_name, url: password_path(resource_name), layout: :horizontal, label_col: 'col-sm-2', control_col: 'col-sm-4' do |f|
+    = f.hidden_field :provider, value: ""
+    = f.email_field :email, placeholder: 'E-mail', prepend: fa_icon('envelope-o fw'), autofocus: true
+    = f.form_group do
+      = f.primary t(:reset_password)
+      = link_button t('form.cancel'), url: new_session_path(resource_name)

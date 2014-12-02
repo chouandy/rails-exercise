@@ -34,4 +34,16 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Devise setting
+  config.action_mailer.default_url_options = { host: 'rails-exercise.dev', port: 80 }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      address: 'smtp.gmail.com',
+      port: 587,
+      user_name: 'andy.rails.exercise@gmail.com',
+      password: 'chouandy',
+      authentication: 'plain',
+      enable_starttls_auto: true
+  }
 end

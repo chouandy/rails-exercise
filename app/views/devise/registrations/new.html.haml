@@ -1,0 +1,12 @@
+.container
+  .page-header
+    %h3
+      = t :sign_up
+  = bootstrap_form_for resource, as: resource_name, url: registration_path(resource_name), layout: :horizontal, label_col: 'col-sm-2', control_col: 'col-sm-4' do |f|
+    = f.email_field :email, placeholder: 'E-mail', prepend: fa_icon('envelope-o fw'), autofocus: true
+    = f.password_field :password, placeholder: 'Password', prepend: fa_icon('key fw'), autocomplete: 'off'
+    = f.password_field :password_confirmation, placeholder: 'Password Confirmation', prepend: fa_icon('key fw'), autocomplete: 'off'
+    = f.form_group do
+      = f.primary t(:sign_up)
+      = link_button t('form.cancel'), url: root_path
+      = link_button t(:resend_confirmation_email), url: new_confirmation_path(resource_name), color: 'warning'
