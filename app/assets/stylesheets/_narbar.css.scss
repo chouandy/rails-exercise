@@ -1,0 +1,18 @@
+nav.navbar {
+  .navbar-header {
+    .navbar-brand {
+      h1, h2 {
+        margin: 0;
+        display: inline;
+      }
+      h1 {
+        font-size: 100%;
+        color: #B00100;
+      }
+      h2 {
+        font-size: 50%;
+        color: #3071a9;
+      }
+    }
+  }
+}
