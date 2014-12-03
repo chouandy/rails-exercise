@@ -1,10 +1,10 @@
-class Users::OmniauthController < Devise::OmniauthCallbacksController
+class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def auth
-    @user = User.sign_in_with_omniauth(request.env['omniauth.auth'])
+    @user = User.find_or_create_by_omniauth(env['omniauth.auth'])
     if @user.persisted?
       sign_in_and_redirect(@user, event: :authentication)
     else
-      session['devise.facebook_data'] = request.env['omniauth.auth']
+      session['devise.facebook_data'] = env['omniauth.auth']
       redirect_to new_user_registration_url
     end
   end

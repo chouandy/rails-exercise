@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.1.5'
 
 # Use Omniauth
+gem 'omniauth'
 gem 'omniauth-github', github: 'intridea/omniauth-github'
 gem 'omniauth-facebook'
 
