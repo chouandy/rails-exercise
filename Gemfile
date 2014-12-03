@@ -1,6 +1,13 @@
 source 'https://rubygems.org'
 ruby '2.1.5'
 
+# Use Omniauth
+gem 'omniauth-github', github: 'intridea/omniauth-github'
+gem 'omniauth-facebook'
+
+# Use Figaro manage auth_key & auth_secret
+gem 'figaro'
+
 # Use Devise control User
 gem 'devise'
 gem 'devise-i18n'

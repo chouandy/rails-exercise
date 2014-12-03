@@ -9,3 +9,8 @@ zh-TW:
   forgot_password: '忘記密碼？'
   reset_password: '重設密碼'
   reset: '重設'
+
+  # omniauth dependence
+  sign_in_with_account: '帳號登入'
+  sign_in_with_facebook: 'Facebook 登入'
+  sign_in_with_github: 'GitHub 登入'

@@ -10,9 +10,18 @@
           %a{ href: new_registration_path(:user) }
             = fa_icon 'plus fw'
             = t :sign_up
+        %li
           %a{ href: new_session_path(:user) }
             = fa_icon 'sign-in fw'
-            = t :sign_in
+            = t :sign_in_with_account
+        %li
+          %a{ href: omniauth_authorize_path(:user, :facebook) }
+            = fa_icon 'facebook-square fw'
+            = t :sign_in_with_facebook
+        %li
+          %a{ href: omniauth_authorize_path(:user, :github) }
+            = fa_icon 'github fw'
+            = t :sign_in_with_github
     - else
       %a.dropdown-toggle{ href: '#', 'data-toggle' => 'dropdown' }
         = fa_icon 'user fw'
