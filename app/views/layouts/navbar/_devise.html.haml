@@ -10,6 +10,7 @@
           %a{ href: new_registration_path(:user) }
             = fa_icon 'plus fw'
             = t :sign_up
+        %li.divider
         %li
           %a{ href: new_session_path(:user) }
             = fa_icon 'sign-in fw'
@@ -17,17 +18,22 @@
         %li
           %a{ href: omniauth_authorize_path(:user, :facebook) }
             = fa_icon 'facebook-square fw'
-            = t :sign_in_with_facebook
+            = t :sign_in_with, provider: 'Facebook'
         %li
           %a{ href: omniauth_authorize_path(:user, :github) }
             = fa_icon 'github fw'
-            = t :sign_in_with_github
+            = t :sign_in_with, provider: 'GitHub'
     - else
       %a.dropdown-toggle{ href: '#', 'data-toggle' => 'dropdown' }
         = fa_icon 'user fw'
         = current_user.name
         %b.caret
       %ul.dropdown-menu
+        %li
+          %a{ href: edit_registration_path(:user) }
+            = fa_icon 'key fw'
+            = t :change_password
+        %li.divider
         %li
           %a{ href: destroy_session_path(:user), 'data-method' => 'delete' }
             = fa_icon 'sign-out fw'

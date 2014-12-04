@@ -8,5 +8,5 @@
     = f.password_field :password_confirmation, placeholder: 'Password Confirmation', prepend: fa_icon('key fw'), autocomplete: 'off'
     = f.form_group do
       = f.primary t(:sign_up)
-      = link_button t('form.cancel'), url: root_path
+      = link_button t(:cancel), url: root_path
       = link_button t(:resend_confirmation_email), url: new_confirmation_path(resource_name), color: 'warning'

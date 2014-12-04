@@ -7,6 +7,7 @@ zh-TW:
         email: '信箱'
         password: '密碼'
         password_confirmation: '密碼確認'
+        current_password: '目前密碼'
         remember_me: '保持登入狀態'
         remember_created_at: '保持登入狀態開始時間'
         sign_in_count: '登入次數'
@@ -16,3 +17,6 @@ zh-TW:
         last_sign_in_ip: '上次登入IP'
         created_at: '建立時間'
         updated_at: '更新時間'
+  help:
+    user:
+      change_password: '需要您目前密碼來完成變更'

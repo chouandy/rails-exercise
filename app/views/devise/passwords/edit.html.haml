@@ -8,4 +8,4 @@
     = f.password_field :password_confirmation, placeholder: 'Password Confirmation', prepend: fa_icon('key fw'), autocomplete: 'off'
     = f.form_group do
       = f.primary t(:reset)
-      = link_button t('form.cancel'), url: new_session_path(resource_name)
+      = link_button t(:cancel), url: new_session_path(resource_name)

@@ -7,4 +7,4 @@
     = f.email_field :email, placeholder: 'E-mail', prepend: fa_icon('envelope-o fw'), autofocus: true
     = f.form_group do
       = f.primary t(:reset_password)
-      = link_button t('form.cancel'), url: new_session_path(resource_name)
+      = link_button t(:cancel), url: new_session_path(resource_name)

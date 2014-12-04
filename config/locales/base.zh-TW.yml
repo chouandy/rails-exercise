@@ -1,3 +1,6 @@
 zh-TW:
-  form:
-    cancel: '取消'
+  # form
+  submit: '送出'
+  create: '新增'
+  update: '更新'
+  cancel: '取消'
