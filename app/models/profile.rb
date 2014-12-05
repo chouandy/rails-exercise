@@ -11,6 +11,8 @@ class Profile < ActiveRecord::Base
                                 size: { in: 0..1.megabytes }
 
   validates :cid, identity: true, allow_blank: true
+  before_validation { cid.upcase! if cid }
+
   # override by model
   def invisible_attributes
     %w(id user_id)
