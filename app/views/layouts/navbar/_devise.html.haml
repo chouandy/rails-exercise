@@ -26,9 +26,17 @@
     - else
       %a.dropdown-toggle{ href: '#', 'data-toggle' => 'dropdown' }
         = fa_icon 'user fw'
-        = current_user.name
+        = current_user.username
         %b.caret
       %ul.dropdown-menu
+        %li
+          %a{ href: user_profile_path(current_user) }
+            = fa_icon 'file-text-o fw'
+            = t :user_profile
+        %li
+          %a{ href: user_setting_path(current_user) }
+            = fa_icon 'edit fw'
+            = t :user_setting
         %li
           %a{ href: edit_registration_path(:user) }
             = fa_icon 'key fw'

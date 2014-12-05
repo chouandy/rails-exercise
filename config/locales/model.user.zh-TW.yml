@@ -1,8 +1,6 @@
 zh-TW:
-  activerecord:
-    models:
-      user: '使用者'
-    attributes:
+  helpers:
+    label:
       user:
         email: '信箱'
         password: '密碼'

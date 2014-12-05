@@ -1,5 +1,9 @@
 class User < ActiveRecord::Base
   include OmniauthCallbacks
+  include VisibleAttributes
+
+  has_one :profile, dependent: :destroy
+  accepts_nested_attributes_for :profile
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
@@ -8,7 +12,16 @@ class User < ActiveRecord::Base
          :confirmable,
          :omniauthable, omniauth_providers: [:facebook, :github]
 
-  def name
+  def username
     self.email.split(/@/).first
+  end
+
+  def to_param
+    "#{id} #{username}".to_slug.normalize.to_s
+  end
+
+  # override by model
+  def invisible_attributes
+    %w(id encrypted_password reset_password_token reset_password_sent_at remember_created_at confirmation_token confirmed_at confirmation_sent_at unconfirmed_email)
   end
 end

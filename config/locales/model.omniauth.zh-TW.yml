@@ -1,0 +1,8 @@
+zh-TW:
+  helpers:
+    label:
+      omniauth:
+        provider: '服務提供者'
+        uid: 'UID'
+        image: '頭像路徑'
+        url: '網址'

@@ -23,3 +23,6 @@
 
 # Ignore RubyMine files
 /.idea
+
+# Ignore Paperclip Storage path
+/public/system

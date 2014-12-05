@@ -1,0 +1,20 @@
+.container
+  .page-header
+    %h3
+      = t :user_profile
+  = render partial: 'layouts/model/show', locals: { resource: @user }
+  = render partial: 'layouts/model/show', locals: { resource: @user.profile }
+  .form-horizontal
+    .form-group
+      = label :profile, :avatar, class: 'control-label col-sm-2'
+      .col-sm-10
+        %p.form-control-static
+          = link_to 'original', @user.profile.avatar.url, target: '_blank'
+          = link_to 'medium', @user.profile.avatar.url(:medium), target: '_blank'
+          = link_to 'thumb', @user.profile.avatar.url(:thumb), target: '_blank'
+  - if @user.omniauths
+    - @user.omniauths.each do |omniauth|
+      .page-header
+        %h3
+          = t :bind_services
+      = render partial: 'layouts/model/show', locals: { resource: omniauth }

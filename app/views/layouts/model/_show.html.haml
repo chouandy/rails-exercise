@@ -1,0 +1,17 @@
+- resource_name = resource.class.name.underscore
+- attributes = resource.visible_attributes
+.form-horizontal
+  - attributes.each do |key, value|
+    .form-group
+      = label resource_name, key, class: 'control-label col-sm-2'
+      .col-sm-10
+        - column_type = resource.column_for_attribute(key).type
+        - date_types = [:date, :datetime]
+        - if column_type == :text && value
+          = simple_format value
+        - else
+          %p.form-control-static
+            - if column_type.in?(date_types) && value
+              = l value, format: :long
+            - else
+              = key == 'sex' ? t(value) : value

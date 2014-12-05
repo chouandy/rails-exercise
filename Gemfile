@@ -1,6 +1,11 @@
 source 'https://rubygems.org'
 ruby '2.1.5'
 
+# Use paperclip to upload files
+gem 'paperclip', '~> 4.2'
+# use babosa for url normalize
+gem 'babosa'
+
 # Use Omniauth
 gem 'omniauth'
 gem 'omniauth-github', github: 'intridea/omniauth-github'

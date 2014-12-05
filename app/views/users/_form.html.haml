@@ -1,0 +1,15 @@
+= bootstrap_form_for resource, url: user_setting_path, html: { multipart: true }, layout: :horizontal, label_col: 'col-sm-2', control_col: 'col-sm-4' do |f|
+  = f.static_control :email
+  = f.fields_for :profile do |n|
+    = n.text_field :name, autofocus: true
+    = n.text_field :cid
+    = n.date_field :birthday
+    = n.select :sex, [[t(:male), 'male'], [t(:female), 'female']], prompt: true
+    = n.text_field :tel
+    = n.text_field :address, control_col: 'col-sm-6'
+    = n.text_field :tagline, control_col: 'col-sm-6'
+    = n.text_area :introduction, control_col: 'col-sm-6'
+    = n.file_field :avatar
+  = f.form_group do
+    = f.primary t(:update)
+    = link_to t(:cancel), user_profile_path(current_user), class: 'btn btn-default'

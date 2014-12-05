@@ -9,9 +9,12 @@ zh-TW:
   forgot_password: '忘記密碼？'
   reset_password: '重設密碼'
   reset: '重設'
+  user_profile: '我的檔案'
+  user_setting: '我的設定'
   change_password: '變更密碼'
   change_password_alert: '如一開始使用 Facebook, GitHub 登入者，請先登出後，前往帳號登入頁面，點擊忘記密碼?來重設密碼'
 
   # omniauth dependence
   sign_in_with_account: '帳號登入'
   sign_in_with: '%{provider} 登入'
+  bind_services: '綁定服務'

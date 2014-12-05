@@ -1,0 +1,20 @@
+zh-TW:
+  helpers:
+    label:
+      profile:
+        name: '姓名'
+        cid: '身分證'
+        birthday: '生日'
+        sex: '性別'
+        tel: '聯絡電話'
+        address: '地址'
+        tagline: '座右銘'
+        introduction: '關於我'
+        avatar_file_name: '頭像檔案名稱'
+        avatar_content_type: '頭像檔案類型'
+        avatar_file_size: '頭像檔案大小'
+        avatar_updated_at: '頭像上傳時間'
+        avatar: '頭像'
+  # sex
+  male: '男'
+  female: '女'
