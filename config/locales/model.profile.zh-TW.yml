@@ -18,3 +18,8 @@ zh-TW:
   # sex
   male: '男'
   female: '女'
+  # errors messages
+  activerecord:
+    errors:
+      messages:
+        wrong_identity: '身分證格式錯誤'

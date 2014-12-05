@@ -10,6 +10,7 @@ class Profile < ActiveRecord::Base
   validates_attachment :avatar, content_type: { content_type: /\Aimage\/.*\Z/ },
                                 size: { in: 0..1.megabytes }
 
+  validates :cid, identity: true, allow_blank: true
   # override by model
   def invisible_attributes
     %w(id user_id)

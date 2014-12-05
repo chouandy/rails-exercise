@@ -3,6 +3,7 @@ rails-exercise
 
 # Environment
 
+- Mac OS X Yosemite 10.10.1
 - Ruby 2.1.5
 - Rails 4.1.8
 
@@ -17,30 +18,28 @@ Use gems
 
 ## Rspec testing framework
 
-Setting guide：[GOTO](http://chouandy.logdown.com/posts/241718-configure-rspec-testing-environment)
+- Setting guide：[GOTO](http://chouandy.logdown.com/posts/241718-configure-rspec-testing-environment)
 
 ## Haml template
 
-Official site：[GOTO](http://haml.info/)
+- Official site：[GOTO](http://haml.info/)
 
 ## Use Bootstrap && Compass
 
-Bootstrap official site：[GOTO](http://getbootstrap.com/)
-
-Compass official site：[GOTO](http://compass-style.org/)
+- Bootstrap official site：[GOTO](http://getbootstrap.com/)
+- Compass official site：[GOTO](http://compass-style.org/)
 
 ## Use Font Awesome Icons
 
-Official site：[GOTO](http://fortawesome.github.io/Font-Awesome/)
+- Official site：[GOTO](http://fortawesome.github.io/Font-Awesome/)
 
 ## Use jQuery plugin - Timeago
 
-Setting guide：[GOTO](http://chouandy.logdown.com/posts/244907-use-jquery-plugin-timeago)
+- Setting guide：[GOTO](http://chouandy.logdown.com/posts/244907-use-jquery-plugin-timeago)
 
 ## Use Devise control User
 
-Basic installation：[GOTO](http://chouandy.logdown.com/posts/245117-devise-part-1-basic-installation)
-
-Use omniauthable module：[GOTO](http://chouandy.logdown.com/posts/245192-devise-part-2-use-omniauthable-module)
-
-Add User Profile with avatar：[GOTO](http://chouandy.logdown.com/posts/245349-devise-part-3-add-user-profile-with-avatar)
+- Basic installation：[GOTO](http://chouandy.logdown.com/posts/245117-devise-part-1-basic-installation)
+- Use omniauthable module：[GOTO](http://chouandy.logdown.com/posts/245192-devise-part-2-use-omniauthable-module)
+- Add User Profile with avatar：[GOTO](http://chouandy.logdown.com/posts/245349-devise-part-3-add-user-profile-with-avatar)
+- Add Identity Validator：[GOTO](http://chouandy.logdown.com/posts/245408-devise-part-4-add-identity-validator)
