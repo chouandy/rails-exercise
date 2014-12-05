@@ -13,5 +13,7 @@
           %p.form-control-static
             - if column_type.in?(date_types) && value
               = l value, format: :long
+            - elsif key == 'sex' && !value.blank?
+              = t(value)
             - else
-              = key == 'sex' ? t(value) : value
+              = value
