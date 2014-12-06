@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create]
-  before_action :authenticate_owner!, only: [:edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   respond_to :html
@@ -20,6 +19,7 @@ class PostsController < ApplicationController
   end
 
   def edit
+    authenticate_owner!(@post)
   end
 
   def create
@@ -29,6 +29,7 @@ class PostsController < ApplicationController
   end
 
   def update
+    authenticate_owner!(@post)
     @post.update(post_params)
     respond_with(@post)
   end
@@ -39,11 +40,16 @@ class PostsController < ApplicationController
   end
 
   private
+
     def set_post
       @post = Post.find(params[:id])
     end
 
     def post_params
       params.require(:post).permit(:user_id, :title, :permalink, :content)
+    end
+
+    def authenticate_owner!(post)
+      redirect_to root_path if post.user != current_user
     end
 end

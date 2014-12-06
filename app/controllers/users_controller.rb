@@ -26,4 +26,8 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(profile_attributes: [:id, :name, :cid, :birthday, :sex, :tel, :address, :tagline, :introduction, :avatar])
     end
+
+    def authenticate_owner!
+      redirect_to root_path unless user_signed_in? && current_user.to_param == params[:id]
+    end
 end

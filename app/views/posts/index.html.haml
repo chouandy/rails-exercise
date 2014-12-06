@@ -14,5 +14,6 @@
             %td= post.title
             %td
               = link_button fa_icon('eye fw'), url: post, color: 'primary', size: 'sm'
-              = link_button fa_icon('edit fw'), url: edit_post_path(post), color: 'primary', size: 'sm'
-              = link_button fa_icon('trash fw'), url: post, method: 'delete', data: {confirm: t(:are_you_sure)}, color: 'danger', size: 'sm'
+              - if user_signed_in? && post.user == current_user
+                = link_button fa_icon('edit fw'), url: edit_post_path(post), color: 'primary', size: 'sm'
+                = link_button fa_icon('trash fw'), url: post, method: 'delete', data: {confirm: t(:are_you_sure)}, color: 'danger', size: 'sm'
