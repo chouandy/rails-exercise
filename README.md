@@ -50,3 +50,7 @@ Use gems
 ## Use fancyBox2
 
 - Setting guide：[GOTO](http://chouandy.logdown.com/posts/245433-use-fancybox-2-in-ruby-on-rails)
+
+## Post Management
+
+- Basic installation：[GOTO](http://chouandy.logdown.com/posts/245442-post-management-part-1-basic-settings)

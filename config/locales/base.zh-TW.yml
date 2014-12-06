@@ -4,3 +4,8 @@ zh-TW:
   create: '新增'
   update: '更新'
   cancel: '取消'
+  back: '返回'
+
+  #crud
+  options: '選項'
+  are_you_sure: '確定執行此動作？'

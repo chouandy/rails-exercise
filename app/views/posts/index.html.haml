@@ -1,0 +1,18 @@
+.container
+  .page-header
+    %h3
+      = t :posts_list
+  .table-responsive
+    %table.table.table-hover
+      %thead
+        %tr
+          %th.col-sm-10= label(:post, :title)
+          %th.col-sm-2{ colspan: '3' }= t :options
+      %tbody
+        - @posts.each do |post|
+          %tr
+            %td= post.title
+            %td
+              = link_button fa_icon('eye fw'), url: post, color: 'primary', size: 'sm'
+              = link_button fa_icon('edit fw'), url: edit_post_path(post), color: 'primary', size: 'sm'
+              = link_button fa_icon('trash fw'), url: post, method: 'delete', data: {confirm: t(:are_you_sure)}, color: 'danger', size: 'sm'

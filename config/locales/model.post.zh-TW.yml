@@ -1,0 +1,12 @@
+zh-TW:
+  posts: '文章'
+  posts_list: '文章列表'
+  new_post: '新增文章'
+  edit_post: '修改文章'
+  post_at: '發表於'
+  helpers:
+    label:
+      post:
+        title: '標題'
+        permalink: '靜態連結'
+        content: '內容'

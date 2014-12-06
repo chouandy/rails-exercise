@@ -1,0 +1,13 @@
+.container
+  .page-header
+    %h3
+      = @post.title
+      %small= @post.permalink
+  .content
+    = simple_format @post.content
+  %p
+    = @post.user.username
+    = t :post_at
+    = timeago @post.created_at
+  .options
+    = link_button t(:back), url: posts_path, color: 'warning'
