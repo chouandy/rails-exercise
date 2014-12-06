@@ -43,3 +43,7 @@ Use gems
 - Use omniauthable module：[GOTO](http://chouandy.logdown.com/posts/245192-devise-part-2-use-omniauthable-module)
 - Add User Profile with avatar：[GOTO](http://chouandy.logdown.com/posts/245349-devise-part-3-add-user-profile-with-avatar)
 - Add Identity Validator：[GOTO](http://chouandy.logdown.com/posts/245408-devise-part-4-add-identity-validator)
+
+## Use fancyBox2
+
+- Setting guide：[GOTO](http://chouandy.logdown.com/posts/245433-use-fancybox-2-in-ruby-on-rails)

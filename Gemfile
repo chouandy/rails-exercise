@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.1.5'
 
+# Use fancyBox2
+gem 'fancybox2-rails'
+
 # Use paperclip to upload files
 gem 'paperclip', '~> 4.2'
 # use babosa for url normalize

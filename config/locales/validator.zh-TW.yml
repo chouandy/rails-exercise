@@ -1,0 +1,6 @@
+zh-TW:
+  # errors messages
+  activerecord:
+    errors:
+      messages:
+        wrong_identity: '身分證格式錯誤'

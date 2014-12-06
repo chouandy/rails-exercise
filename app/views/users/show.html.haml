@@ -11,9 +11,9 @@
           = label :profile, :avatar, class: 'control-label col-sm-2'
           .col-sm-10
             %p.form-control-static
-              = link_to 'original', @user.profile.avatar.url, target: '_blank'
-              = link_to 'medium', @user.profile.avatar.url(:medium), target: '_blank'
-              = link_to 'thumb', @user.profile.avatar.url(:thumb), target: '_blank'
+              = link_to 'original', @user.profile.avatar.url, class: 'fancybox'
+              = link_to 'medium', @user.profile.avatar.url(:medium), class: 'fancybox'
+              = link_to 'thumb', @user.profile.avatar.url(:thumb), class: 'fancybox'
   - if @user.omniauths
     - @user.omniauths.each do |omniauth|
       .page-header
