@@ -15,6 +15,10 @@ zh-TW:
         last_sign_in_ip: '上次登入IP'
         created_at: '建立時間'
         updated_at: '更新時間'
+  activerecord:
+      attributes:
+        user:
+          remember_me: '保持登入狀態'
   help:
     user:
       change_password: '需要您目前密碼來完成變更'
