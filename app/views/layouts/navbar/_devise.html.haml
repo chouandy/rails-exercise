@@ -23,6 +23,10 @@
           %a{ href: omniauth_authorize_path(:user, :github) }
             = fa_icon 'github fw'
             = t :sign_in_with, provider: 'GitHub'
+        %li
+          %a{ href: omniauth_authorize_path(:user, :linkedin) }
+            = fa_icon 'linkedin fw'
+            = t :sign_in_with, provider: 'Linkedin'
     - else
       %a.dropdown-toggle{ href: '#', 'data-toggle' => 'dropdown' }
         = fa_icon 'user fw'

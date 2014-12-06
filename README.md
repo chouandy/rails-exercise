@@ -41,6 +41,9 @@ Use gems
 
 - Basic installation：[GOTO](http://chouandy.logdown.com/posts/245117-devise-part-1-basic-installation)
 - Use omniauthable module：[GOTO](http://chouandy.logdown.com/posts/245192-devise-part-2-use-omniauthable-module)
+    - Facebook
+    - GitHub
+    - Linkedin
 - Add User Profile with avatar：[GOTO](http://chouandy.logdown.com/posts/245349-devise-part-3-add-user-profile-with-avatar)
 - Add Identity Validator：[GOTO](http://chouandy.logdown.com/posts/245408-devise-part-4-add-identity-validator)
 

@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable,
-         :omniauthable, omniauth_providers: [:facebook, :github]
+         :omniauthable, omniauth_providers: [:facebook, :github, :linkedin]
 
   def username
     self.email.split(/@/).first

@@ -12,6 +12,7 @@ module OmniauthCallbacks
         omniauth.image    = auth.info.image
         omniauth.url      = auth.info.urls.Facebook if auth.provider == 'facebook'
         omniauth.url      = auth.info.urls.GitHub if auth.provider == 'github'
+        omniauth.url      = auth.info.urls.public_profile if auth.provider == 'linkedin'
       end
     end
   end

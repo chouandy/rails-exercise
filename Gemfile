@@ -13,6 +13,7 @@ gem 'babosa'
 gem 'omniauth'
 gem 'omniauth-github', github: 'intridea/omniauth-github'
 gem 'omniauth-facebook'
+gem 'omniauth-linkedin'
 
 # Use Figaro manage auth_key & auth_secret
 gem 'figaro'
