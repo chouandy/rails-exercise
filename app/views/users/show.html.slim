@@ -1,6 +1,6 @@
 .container
   .page-header
-    %h3
+    h3
       = t :user_profile
   = render partial: 'layouts/model/show', locals: { resource: @user }
   - if @user.profile
@@ -10,13 +10,13 @@
         .form-group
           = label :profile, :avatar, class: 'control-label col-sm-2'
           .col-sm-10
-            %p.form-control-static
-              = link_to 'original', @user.profile.avatar.url, class: 'fancybox'
-              = link_to 'medium', @user.profile.avatar.url(:medium), class: 'fancybox'
+            p.form-control-static
+              =' link_to 'original', @user.profile.avatar.url, class: 'fancybox'
+              =' link_to 'medium', @user.profile.avatar.url(:medium), class: 'fancybox'
               = link_to 'thumb', @user.profile.avatar.url(:thumb), class: 'fancybox'
   - if @user.omniauths
     - @user.omniauths.each do |omniauth|
       .page-header
-        %h3
+        h3
           = t :bind_services
       = render partial: 'layouts/model/show', locals: { resource: omniauth }

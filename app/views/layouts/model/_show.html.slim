@@ -10,7 +10,7 @@
         - if column_type == :text && value
           = simple_format value
         - else
-          %p.form-control-static
+          p.form-control-static
             - if column_type.in?(date_types) && value
               = l value, format: :long
             - elsif key == 'sex' && !value.blank?

@@ -1,0 +1,52 @@
+ul.nav.navbar-nav.navbar-right
+  li.dropdown
+    - unless user_signed_in?
+      a.dropdown-toggle href="#" data-toggle="dropdown"
+        =' fa_icon 'user fw'
+        | Devise
+        b.caret
+      ul.dropdown-menu
+        li
+          a href=new_registration_path(:user)
+            =' fa_icon 'plus fw'
+            = t :sign_up
+        li.divider
+        li
+          a href=new_session_path(:user)
+            =' fa_icon 'sign-in fw'
+            = t :sign_in_with_account
+        li
+          a href=omniauth_authorize_path(:user, :facebook)
+            =' fa_icon 'facebook-square fw'
+            = t :sign_in_with, provider: 'Facebook'
+        li
+          a href=omniauth_authorize_path(:user, :github)
+            =' fa_icon 'github fw'
+            = t :sign_in_with, provider: 'GitHub'
+        li
+          a href=omniauth_authorize_path(:user, :linkedin)
+            =' fa_icon 'linkedin fw'
+            = t :sign_in_with, provider: 'Linkedin'
+    - else
+      a.dropdown-toggle href="#" data-toggle="dropdown"
+        =' fa_icon 'user fw'
+        = current_user.username
+        b.caret
+      ul.dropdown-menu
+        li
+          a href=user_profile_path(current_user)
+            =' fa_icon 'file-text-o fw'
+            = t :user_profile
+        li
+          a href=user_setting_path(current_user)
+            =' fa_icon 'edit fw'
+            = t :user_setting
+        li
+          a href=edit_registration_path(:user)
+            =' fa_icon 'key fw'
+            = t :change_password
+        li.divider
+        li
+          a href=destroy_session_path(:user) data-method="delete"
+            =' fa_icon 'sign-out fw'
+            = t :sign_out

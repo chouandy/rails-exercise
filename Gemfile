@@ -44,8 +44,11 @@ gem 'jquery-turbolinks'
 # Use rails-i18n
 gem 'rails-i18n', '~> 4.0.0'
 
-# Use haml template
-gem 'haml'
+# Use slim template
+gem 'slim'
+gem 'slim-rails'
+# slim support markdown
+gem 'redcarpet'
 
 # Rspec testing framework
 group :development, :test do

@@ -20,9 +20,9 @@ Use gems
 
 - Setting guide：[GOTO](http://chouandy.logdown.com/posts/241718-configure-rspec-testing-environment)
 
-## Haml template
+## Use Slim template
 
-- Official site：[GOTO](http://haml.info/)
+- Setting guide：[GOTO](http://chouandy.logdown.com/posts/245563-from-the-haml-template-converted-to-slim)
 
 ## Use Bootstrap && Compass
 

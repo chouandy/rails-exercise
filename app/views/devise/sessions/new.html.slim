@@ -1,6 +1,6 @@
 .container
   .page-header
-    %h3
+    h3
       = t :sign_in
   = bootstrap_form_for resource, as: resource_name, url: session_path(resource_name), layout: :horizontal, label_col: 'col-sm-2', control_col: 'col-sm-4' do |f|
     - if alert.nil?
@@ -12,5 +12,5 @@
     = f.form_group :remember_me do
       = f.check_box :remember_me
     = f.form_group do
-      = f.primary t(:sign_in)
+      =' f.primary t(:sign_in)
       = link_button t(:forgot_password), url: new_password_path(resource_name), color: 'warning'
