@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :authenticate_owner!
-  before_filter :set_user, only: [:show, :edit, :update]
+  before_filter :set_user, only: [:show, :edit, :update, :edit_password, :update_password]
 
   def show
   end
@@ -17,6 +17,18 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit_password
+  end
+
+  def update_password
+    if @user.update(user_change_password_params)
+      sign_in :user, @user, bypass: true
+      redirect_to user_profile_path(@user)
+    else
+      render 'edit_password'
+    end
+  end
+
   private
 
     def set_user
@@ -25,6 +37,10 @@ class UsersController < ApplicationController
 
     def user_params
       params.require(:user).permit(profile_attributes: [:id, :name, :cid, :birthday, :sex, :tel, :address, :tagline, :introduction, :avatar])
+    end
+
+    def user_change_password_params
+      params.require(:user).permit(:password, :password_confirmation)
     end
 
     def authenticate_owner!

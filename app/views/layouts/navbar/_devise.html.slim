@@ -42,7 +42,7 @@ ul.nav.navbar-nav.navbar-right
             =' fa_icon 'edit fw'
             = t :user_setting
         li
-          a href=edit_registration_path(:user)
+          a href=user_change_password_path(current_user)
             =' fa_icon 'key fw'
             = t :change_password
         li.divider
