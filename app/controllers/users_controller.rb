@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :authenticate_owner!
-  before_filter :set_user, only: [:show, :edit, :update, :edit_password, :update_password]
+  before_filter :set_user
 
   def show
   end
