@@ -10,6 +10,6 @@ html lang="zh_TW"
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    = render partial: 'layouts/navbar/navbar'
+    = render '/shared/navbar/navbar'
     .container
       == yield
