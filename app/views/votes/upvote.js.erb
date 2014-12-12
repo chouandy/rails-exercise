@@ -1,0 +1,1 @@
+$('.vote-box[data-id="<%= @votable.id %>').html("<%= escape_javascript(render 'votes/vote_box', votable: @votable) %>");

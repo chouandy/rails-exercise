@@ -6,13 +6,17 @@
     table.table.table-hover
       thead
         tr
-          th.col-sm-10
+          th.col-sm-1
+          th.col-sm-9
             = label :post, :title
           th.col-sm-2 colspan="3"
             = t :options
       tbody
         - @posts.each do |post|
           tr
+            td
+              .vote-box data-id=post.id
+                = render 'votes/vote_box', votable: post
             td = post.title
             td
               =' link_button fa_icon('eye fw'), url: post, color: 'primary', size: 'sm'

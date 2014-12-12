@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.1.5'
 
+# Use acts_as_votable for vote
+gem 'acts_as_votable', '~> 0.10.0'
+
 # Use fancyBox2
 gem 'fancybox2-rails'
 
@@ -11,7 +14,7 @@ gem 'babosa'
 
 # Use Omniauth
 gem 'omniauth'
-gem 'omniauth-github', github: 'intridea/omniauth-github'
+gem 'omniauth-github'
 gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
 
@@ -28,13 +31,7 @@ group :production do
   gem 'rails_12factor'
 end
 
-# Use Font Awesome
-gem 'font-awesome-sass', github: 'FortAwesome/font-awesome-sass'
-
-# Use Bootstrap && Compass
-gem 'bootstrap-sass'
-gem 'autoprefixer-rails'
-gem 'sprockets-rails', require: 'sprockets/railtie'
+# Use Bootstrap Form
 gem 'bootstrap_form', github: 'bootstrap-ruby/rails-bootstrap-forms'
 
 # Use jquery turbolinks

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  ## Votes
+  get ':model/:id/vote/up' => 'votes#upvote', as: :upvote
+  get ':model/:id/vote/down' => 'votes#downvote', as: :downvote
+
   ## Post
   resources :posts
 

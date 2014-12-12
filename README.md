@@ -54,3 +54,4 @@ Use gems
 ## Post Management
 
 - Basic installation：[GOTO](http://chouandy.logdown.com/posts/245442-post-management-part-1-basic-settings)
+- Post Voteable：[GOTO](http://chouandy.logdown.com/posts/245918-post-management-part-2-vote-up-vote-down-post)
