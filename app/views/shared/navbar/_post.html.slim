@@ -1,16 +1,5 @@
 ul.nav.navbar-nav.navbar-right
-  li.dropdown
-    a.dropdown-toggle href="#" data-toggle="dropdown"
+  li
+    a href=posts_path
       =' fa_icon 'file-text-o fw'
-      = t(:posts)
-      b.caret
-    ul.dropdown-menu
-      li
-        a href=posts_path
-          =' fa_icon 'list fw'
-          = t(:posts_list)
-      - if user_signed_in?
-      li
-        a href=new_post_path
-          =' fa_icon 'plus fw'
-          = t(:new_post)
+      = t(:posts_manage)

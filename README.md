@@ -55,3 +55,4 @@ Use gems
 
 - Basic installation：[GOTO](http://chouandy.logdown.com/posts/245442-post-management-part-1-basic-settings)
 - Post Voteable：[GOTO](http://chouandy.logdown.com/posts/245918-post-management-part-2-vote-up-vote-down-post)
+- Translate Permalink：[GOTO](http://chouandy.logdown.com/posts/246137-post-management-part-3-translate-permalink)

@@ -1,0 +1,14 @@
+#new_post_modal.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close type="button" data-dismiss="modal"
+          span aria-hidden="true" &times;
+          span.sr-only Close
+        h4.modal-title= t(:new_post)
+      .modal-body
+        = bootstrap_form_for post, layout: :horizontal do |f|
+          = f.text_field :title, placeholder: 'Post Title', autofocus: true
+          = f.form_group do
+            =' f.primary t(:submit)
+            = html_button t(:cancel), 'data-dismiss' => 'modal'

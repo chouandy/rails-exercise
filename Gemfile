@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.1.5'
 
+# Use bing_translator for Post permalink
+gem 'bing_translator'
+
 # Use acts_as_votable for vote
 gem 'acts_as_votable', '~> 0.10.0'
 

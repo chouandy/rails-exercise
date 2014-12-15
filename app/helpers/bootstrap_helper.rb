@@ -73,8 +73,7 @@ module BootstrapHelper
     icon_options = pop_value(:icon_options, options, {})
     unless type.to_s.include?('input')
       if icon
-        icon_options[:fw] = true
-        label = fa_icon(icon, icon_options) + label
+        label = fa_icon(icon) + ' ' + label
       end
     end
 

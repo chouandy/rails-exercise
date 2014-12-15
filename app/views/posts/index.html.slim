@@ -1,4 +1,7 @@
 .container
+  .toolbar
+    = html_button t(:new_post), icon: 'plus', 'data-toggle' => 'modal', 'data-target' => '#new_post_modal'
+    = render 'new_post_modal', post: @post
   .page-header
     h3
       = t :posts_list

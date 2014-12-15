@@ -22,7 +22,7 @@
     display: block;
     font-size: 12px;
   }
-  &:hover {
+  &:hover, &:focus {
     text-decoration: none;
     color: #da552f;
     .symbol {

@@ -1,0 +1,20 @@
+# Add configuration values here, as shown below.
+
+FACEBOOK_APP_ID: ''
+FACEBOOK_APP_SECRET: ''
+
+BING_APP_ID: ''
+BING_APP_SECRET: ''
+BING_ACCOUNT_KEY: ''
+
+development:
+  GITHUB_APP_ID: ''
+  GITHUB_APP_SECRET: ''
+  LINKEDIN_APP_ID: ''
+  LINKEDIN_APP_SECRET: ''
+
+production:
+  GITHUB_APP_ID: ''
+  GITHUB_APP_SECRET: ''
+  LINKEDIN_APP_ID: ''
+  LINKEDIN_APP_SECRET: ''

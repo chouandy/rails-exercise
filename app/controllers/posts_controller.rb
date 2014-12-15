@@ -1,20 +1,16 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   respond_to :html
 
   def index
+    @post = Post.new
     @posts = Post.all
     respond_with(@posts)
   end
 
   def show
-    respond_with(@post)
-  end
-
-  def new
-    @post = Post.new
     respond_with(@post)
   end
 
@@ -25,7 +21,7 @@ class PostsController < ApplicationController
   def create
     @post = current_user.posts.build(post_params)
     @post.save
-    respond_with(@post)
+    redirect_to edit_post_path(@post)
   end
 
   def update

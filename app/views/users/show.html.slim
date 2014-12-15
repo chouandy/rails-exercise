@@ -2,9 +2,9 @@
   .page-header
     h3
       = t :user_profile
-  = render '/shared/model/show', resource: @user
+  = render 'shared/model/show', resource: @user
   - if @user.profile
-    = render '/shared/model/show', resource: @user.profile
+    = render 'shared/model/show', resource: @user.profile
     - if !@user.profile.avatar.blank?
       .form-horizontal
         .form-group
@@ -19,4 +19,4 @@
       .page-header
         h3
           = t :bind_services
-      = render '/shared/model/show', resource: omniauth
+      = render 'shared/model/show', resource: omniauth
