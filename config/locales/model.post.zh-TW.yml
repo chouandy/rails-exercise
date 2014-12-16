@@ -2,8 +2,10 @@ zh-TW:
   posts: '文章'
   posts_manage: '文章管理'
   posts_list: '文章列表'
+  show_post: '檢視文章'
   new_post: '新增文章'
   edit_post: '修改文章'
+  delete_post: '刪除文章'
   post_at: '發表於'
   helpers:
     label:

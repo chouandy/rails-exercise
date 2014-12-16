@@ -2,39 +2,24 @@
   float: left;
   -webkit-border-radius: 3px 3px 3px 3px;
           border-radius: 3px 3px 3px 3px;
-  width: 30px;
-  height: 42px;
-  text-align: center;
   cursor: pointer;
   background: #EDECEB;
-  margin: 4px 0;
+  margin: 10px 0;
   box-shadow: 0 1px 0 0 rgba(83,69,64,0.3),0 1px 1px 0 rgba(0,0,0,0.2);
   text-decoration: none;
   color: #534540;
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 24px;
   .symbol {
-    display: inline-block;
-    margin-top: 6px;
-    border-bottom: 12px solid #534540;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+    float: left;
+    margin-right: 5px;
   }
   .count {
-    display: block;
-    font-size: 12px;
+    float: left;
   }
-  &:hover, &:focus {
+  &:hover, &:focus, &.voted {
     text-decoration: none;
     color: #da552f;
-    .symbol {
-      border-bottom-color: #da552f;
-    }
-  }
-  &.voted {
-    .symbol {
-      border-bottom-color: #da552f;
-    }
-    .count {
-      color: #da552f;
-    }
   }
 }

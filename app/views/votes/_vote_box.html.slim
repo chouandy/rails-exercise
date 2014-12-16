@@ -1,10 +1,10 @@
 - if current_user && current_user.voted_up_on?(votable)
   a.upvote.voted href=downvote_path(votable.class.name.downcase, votable.id) data-remote="true"
-    .symbol
+    .symbol= fa_icon 'heart'
     .count
       span= votable.get_upvotes.size
 - else
   a.upvote href=upvote_path(votable.class.name.downcase, votable.id) data-remote="true"
-    .symbol
+    .symbol= fa_icon 'heart'
     .count
       span= votable.get_upvotes.size

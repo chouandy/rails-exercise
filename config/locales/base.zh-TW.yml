@@ -7,5 +7,5 @@ zh-TW:
   back: '返回'
 
   #crud
-  options: '選項'
+  actions: '選項'
   are_you_sure: '確定執行此動作？'
