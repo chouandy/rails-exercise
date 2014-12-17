@@ -28,3 +28,23 @@
     }
   }
 }
+
+.show-post{
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  box-shadow: 0 0 0.5em #e6e6e6 inset,0 0 0 1px #d4d4d4;
+  padding: 20px 40px;
+  .title {
+    .vote-box {
+      margin: -6px 10px 0 0;
+    }
+  }
+  .content {
+    border-bottom: 1px solid #dedede;
+    color: #595959;
+    margin: 40px 0 20px 0;
+  }
+  .metadata {
+    text-align: right;
+  }
+}

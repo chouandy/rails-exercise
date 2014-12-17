@@ -1,13 +1,12 @@
 .container
-  .page-header
-    h3
-      =' @post.title
-      small= @post.permalink
-  .content
-    = simple_format @post.content
-  p
-    =' @post.user.username
-    =' t :post_at
-    = timeago @post.created_at
-  .options
-    = link_button t(:back), url: posts_path, color: 'warning'
+  .show-post
+    .title
+      .vote-box.pull-left data-id=@post.id
+        = render 'votes/vote_box', votable: @post
+      h2= @post.title
+    .content
+      = simple_format @post.content
+    .metadata
+      =' @post.user.username
+      =' t :post_at
+      = timeago @post.created_at
