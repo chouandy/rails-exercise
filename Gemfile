@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+# support markdown & syntax highlighter
+gem 'redcarpet'
+gem 'pygments.rb'
+
 # Use bing_translator for Post permalink
 gem 'bing_translator'
 
@@ -45,8 +49,6 @@ gem 'rails-i18n', '~> 4.0.0'
 # Use slim template
 gem 'slim'
 gem 'slim-rails'
-# slim support markdown
-gem 'redcarpet'
 
 # Rspec testing framework
 group :development, :test do

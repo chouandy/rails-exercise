@@ -1,5 +1,7 @@
 # Add configuration values here, as shown below.
 
+SECRET_KEY_BASE: ''
+
 FACEBOOK_APP_ID: ''
 FACEBOOK_APP_SECRET: ''
 

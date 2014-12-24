@@ -5,7 +5,7 @@
         = render 'votes/vote_box', votable: @post
       h2= @post.title
     .content
-      = simple_format @post.content
+      = markdown @post.content
     .metadata
       =' @post.user.username
       =' t :post_at
