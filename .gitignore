@@ -18,11 +18,15 @@
 # Misc.
 .DS_Store
 
-# Ignore application configuration
+# Ignore application and database configuration
 /config/application.yml
+/config/database.yml
 
 # Ignore RubyMine files
 /.idea
 
 # Ignore Paperclip Storage path
 /public/system
+
+# Ignore rake assets:precompile files
+public/assets/
