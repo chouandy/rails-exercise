@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# use kaminari as paginator
+gem 'kaminari'
+
 # support markdown & syntax highlighter
 gem 'redcarpet'
 gem 'pygments.rb'

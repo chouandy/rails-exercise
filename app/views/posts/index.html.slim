@@ -27,3 +27,4 @@
                     = link_to post, method: 'delete', data: {confirm: t(:are_you_sure)}
                       =' fa_icon('trash fw')
                       = t :delete_post
+    = paginate @posts

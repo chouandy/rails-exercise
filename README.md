@@ -57,3 +57,4 @@ Use gems
 - Post Voteable：[GOTO](http://chouandy.logdown.com/posts/245918-post-management-part-2-vote-up-vote-down-post)
 - Translate Permalink：[GOTO](http://chouandy.logdown.com/posts/246137-post-management-part-3-translate-permalink)
 - Support Markdown and Syntax Highlighter：[GOTO](http://chouandy.logdown.com/posts/247401-post-management-part-4-support-markdown-and-syntax-highlighter)
+- Paginator：[GOTO](http://chouandy.logdown.com/posts/247478-post-management-part-4-paginator)
