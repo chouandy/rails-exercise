@@ -6,6 +6,9 @@ zh-TW:
   cancel: '取消'
   back: '返回'
 
-  #crud
+  # crud
   actions: '選項'
   are_you_sure: '確定執行此動作？'
+
+  # vote
+  login_first: '請先登入!'
