@@ -6,8 +6,11 @@ class PostsController < ApplicationController
 
   def index
     @post = Post.new
-    @posts = Post.order('created_at DESC').page(params[:page]).per(10)
-    respond_with(@posts)
+    @posts = Post.search(params[:search]).order('created_at DESC').page(params[:page]).per(5)
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def show

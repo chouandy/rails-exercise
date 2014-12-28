@@ -5,6 +5,7 @@ zh-TW:
   update: '更新'
   cancel: '取消'
   back: '返回'
+  search: '搜尋'
 
   # crud
   actions: '選項'

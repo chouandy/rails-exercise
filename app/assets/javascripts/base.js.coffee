@@ -9,3 +9,7 @@ $ ->
 
   # use fancyBox2
   $('.fancybox').fancybox();
+
+  # search form
+  $('#posts_search input').keyup ->
+    $(this).closest("form").submit()
