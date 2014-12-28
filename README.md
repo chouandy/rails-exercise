@@ -4,8 +4,8 @@ rails-exercise
 # Environment
 
 - Mac OS X Yosemite 10.10.1
-- Ruby 2.1.5
-- Rails 4.1.8
+- Ruby 2.2.0
+- Rails 4.2.0
 
 # Functions
 
