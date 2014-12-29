@@ -70,7 +70,6 @@ module BootstrapHelper
     add_active_class(options)
 
     icon = pop_value(:icon, options)
-    icon_options = pop_value(:icon_options, options, {})
     unless type.to_s.include?('input')
       if icon
         label = fa_icon(icon) + ' ' + label
@@ -213,5 +212,4 @@ module BootstrapHelper
       content_tag_string(name, content_or_options_with_block, options, escape)
     end
   end
-
 end

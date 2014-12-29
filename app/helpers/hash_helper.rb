@@ -5,7 +5,7 @@ module HashHelper
 
   # Returns a specific value from the given hash (or the default value if not set).
   def get_value(key, hash, default_value = nil)
-    value = hash.key?(key) ? hash[key] : default_value
+    value = hash.delete(key)
     value = default_value if value.nil? && !default_value.nil?
     value
   end
@@ -13,9 +13,7 @@ module HashHelper
   # Removes and returns a specific value from the given hash (or the default value if not set).
   def pop_value(key, hash, default_value = nil)
     symbolize_keys(hash)
-    value = get_value(key.to_sym, hash, default_value)
-    hash.delete(key)
-    value
+    get_value(key.to_sym, hash, default_value)
   end
 
   # all keys of the given hash symbolize.

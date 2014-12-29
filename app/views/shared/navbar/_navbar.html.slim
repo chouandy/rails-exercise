@@ -10,21 +10,12 @@ nav.navbar.navbar-default role="navigation"
         h1' Rails Exercise
         h2 Ruby 2.2.0 Rails 4.2.0
     .navbar-menu.collapse.navbar-collapse
-      ul.nav.navbar-nav
-        - unless Rails.env.production?
+      - unless Rails.env.production?
+        ul.nav.navbar-nav
           li
             a href="/rails/info/routes" target="_blank"
               =' fa_icon 'anchor fw'
               | Routes info
-        li.dropdown
-          a.dropdown-toggle href="#" data-toggle="dropdown"
-            =' fa_icon 'book fw'
-            | Examples
-            b.caret
-          ul.dropdown-menu
-            li
-              a href=examples_url('timeago') Timeago
-            li
-              a href=examples_url('fancybox') fancyBox2
+      = render 'shared/navbar/examples'
       = render 'shared/navbar/devise'
       = render 'shared/navbar/post'

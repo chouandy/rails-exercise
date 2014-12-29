@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20141212061817) do
 
-  create_table "omniauths", force: true do |t|
+  create_table "omniauths", force: :cascade do |t|
     t.integer "user_id"
     t.string  "provider"
     t.string  "uid"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20141212061817) do
 
   add_index "omniauths", ["user_id"], name: "index_omniauths_on_user_id"
 
-  create_table "posts", force: true do |t|
+  create_table "posts", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "title"
     t.string   "permalink"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20141212061817) do
 
   add_index "posts", ["user_id"], name: "index_posts_on_user_id"
 
-  create_table "profiles", force: true do |t|
+  create_table "profiles", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "name"
     t.string   "cid"
@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 20141212061817) do
 
   add_index "profiles", ["user_id"], name: "index_profiles_on_user_id"
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -75,7 +75,7 @@ ActiveRecord::Schema.define(version: 20141212061817) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
-  create_table "votes", force: true do |t|
+  create_table "votes", force: :cascade do |t|
     t.integer  "votable_id"
     t.string   "votable_type"
     t.integer  "voter_id"

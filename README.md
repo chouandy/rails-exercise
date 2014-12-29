@@ -33,9 +33,19 @@ Use gems
 
 - Official site：[GOTO](http://fortawesome.github.io/Font-Awesome/)
 
-## Use jQuery plugin - Timeago
+## Utilities
+
+#### Use jQuery plugin - Timeago
 
 - Setting guide：[GOTO](http://chouandy.logdown.com/posts/244907-use-jquery-plugin-timeago)
+
+#### Use fancyBox2
+
+- Setting guide：[GOTO](http://chouandy.logdown.com/posts/245433-use-fancybox-2-in-ruby-on-rails)
+
+#### Use Google Qrcode API
+
+- Setting guide：[GOTO](http://chouandy.logdown.com/posts/247829-ruby-on-rails-using-the-google-qr-code-generator)
 
 ## Use Devise control User
 
@@ -46,10 +56,6 @@ Use gems
     - Linkedin
 - Add User Profile with avatar：[GOTO](http://chouandy.logdown.com/posts/245349-devise-part-3-add-user-profile-with-avatar)
 - Add Identity Validator：[GOTO](http://chouandy.logdown.com/posts/245408-devise-part-4-add-identity-validator)
-
-## Use fancyBox2
-
-- Setting guide：[GOTO](http://chouandy.logdown.com/posts/245433-use-fancybox-2-in-ruby-on-rails)
 
 ## Post Management
 

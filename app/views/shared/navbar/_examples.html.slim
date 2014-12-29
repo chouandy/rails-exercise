@@ -1,0 +1,11 @@
+ul.nav.navbar-nav
+  li.dropdown
+    a.dropdown-toggle href="#" data-toggle="dropdown"
+      =' fa_icon 'book fw'
+      | Examples
+      b.caret
+    ul.dropdown-menu
+      li
+        - ExamplesController.action_methods.each do |action|
+          a href=examples_url(action)
+            = action.capitalize
