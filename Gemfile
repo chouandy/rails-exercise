@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 ruby '2.2.0'
 
-# use kaminari as paginator
+# Use markdown template
+gem 'markdown-rails'
+
+# Use kaminari as paginator
 gem 'kaminari'
 
-# support markdown & syntax highlighter
+# Support markdown & syntax highlighter
 gem 'redcarpet'
 gem 'pygments.rb'
 

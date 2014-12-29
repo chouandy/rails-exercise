@@ -138,6 +138,9 @@ GEM
       systemu (~> 2.6.2)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    markdown-rails (0.2.1)
+      rails
+      rdiscount (>= 1.6.8, < 2.0)
     mime-types (1.25.1)
     mini_portile (0.6.1)
     minitest (5.5.0)
@@ -222,6 +225,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
+    rdiscount (1.6.8)
     rdoc (4.2.0)
     redcarpet (3.2.2)
     responders (2.0.2)
@@ -334,6 +338,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   kaminari
+  markdown-rails
   omniauth
   omniauth-facebook
   omniauth-github

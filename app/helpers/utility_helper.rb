@@ -15,7 +15,7 @@ module UtilityHelper
     qrcode_url += "&chl=#{data}"
     qrcode_url += "&chs=#{width}x#{width}"
     qrcode_url += "&choe=#{output_encoding}" unless output_encoding.nil?
-    if error_correction_level.nil? || margin.nil?
+    if error_correction_level.nil? or margin.nil?
       qrcode_url += %(&chld=#{error_correction_level}) unless error_correction_level.nil?
       qrcode_url += %(&chld=|#{margin}) unless margin.nil?
     else

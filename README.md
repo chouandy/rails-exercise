@@ -20,9 +20,15 @@ Use gems
 
 - Setting guide：[GOTO](http://chouandy.logdown.com/posts/241718-configure-rspec-testing-environment)
 
-## Use Slim template
+## Templates
+
+#### Use Slim template
 
 - Setting guide：[GOTO](http://chouandy.logdown.com/posts/245563-from-the-haml-template-converted-to-slim)
+
+#### Use Markdown template
+
+- Setting guide：[GOTO](http://chouandy.logdown.com/posts/247854-use-support-syntax-highlighter-markdown-template-in-ruby-on-rails)
 
 ## Use Bootstrap && Compass
 
