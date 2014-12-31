@@ -11,10 +11,7 @@ rails-exercise
 
 ## Display full error context
 
-Use gems
-
-- [better_errors](https://github.com/charliesome/better_errors)
-- [binding_of_caller](https://github.com/banister/binding_of_caller)
+- Setting guide：[GOTO](http://chouandy.logdown.com/posts/247972-use-better-errors-and-rails-panel-makes-debugging-easier-faster)
 
 ## Rspec testing framework
 
