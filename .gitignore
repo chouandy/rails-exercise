@@ -18,9 +18,8 @@
 # Misc.
 .DS_Store
 
-# Ignore application and database configuration
-/config/application.yml
-/config/database.yml
+# Ignore yml configuration
+/config/*.yml
 
 # Ignore RubyMine files
 /.idea
@@ -30,3 +29,6 @@
 
 # Ignore rake assets:precompile files
 public/assets/
+
+# set local rvm gemset
+/.ruby-gemset
